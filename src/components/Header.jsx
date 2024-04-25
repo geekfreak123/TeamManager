@@ -1,9 +1,10 @@
-const Header = () => {
+const Header = ({ teamMemberCount, selectedTeam }) => {
   return (
     <header>
-      <h1 className="p-4 mt-2 bg-danger bg-gradient text-white rounded">
-        I am Header
-      </h1>
+      <h1>Team Member Allocation</h1>
+      <p>
+        {selectedTeam} has {teamMemberCount} Members
+      </p>
     </header>
   );
 };
